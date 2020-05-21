@@ -1,1 +1,10 @@
+import cv2
+import os
 
+os.chdir(r'D:\Project_Spoof(Noel)\guy_test\SPOOFDATA\TEST\fake')
+print(os.getcwd())
+
+for file in os.listdir("."):
+    image = cv2.imread(file)
+    image_resize = cv2.resize(image, (1328, 1328))  # width, height
+    cv2.imwrite(file,image_resize)
