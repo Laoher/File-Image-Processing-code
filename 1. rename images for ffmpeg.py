@@ -7,7 +7,7 @@ for file in os.listdir("."):
     if file.endswith(".jpg") or file.endswith(".png"):
         os.rename(file, str(count) + ".jpg")
         count = count + 1
-max_digit = len(str(count))+1
+max_digit = len(str(count))
 for file in os.listdir("."):
     if file.endswith(".jpg"):
         miss =max_digit - len(file[:-4])
