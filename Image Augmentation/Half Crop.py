@@ -1,7 +1,7 @@
 import os
 import cv2
 
-
+# Take the bottom and top parts and save them into the same folder
 def half_crop(path_list, iftop=1, ifbottom=1):
     for i in path_list:
         os.chdir(i)
